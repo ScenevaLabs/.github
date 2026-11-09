@@ -1,0 +1,21 @@
+name: "Idea or request / Öneri"
+description: "Suggest a feature or an improvement. / Yeni özellik ya da iyileştirme öner."
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: "What problem would this solve? / Hangi sorunu çözer?"
+      description: "Describe your situation at work. / İşte yaşadığın durumu anlat."
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: "Your idea / Önerin"
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "How do you handle it today? / Bugün nasıl idare ediyorsun?"

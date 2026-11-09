@@ -1,0 +1,39 @@
+name: "Bug report / Hata bildir"
+description: "Something doesn't work as expected. / Bir şey beklendiği gibi çalışmıyor."
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Security issue? Don't open an issue** — use the *Security* tab → *Report a vulnerability*.
+        **Güvenlik açığı mı?** Issue açma, *Security* sekmesi → *Report a vulnerability* yolunu kullan.
+
+        Don't paste real personal data (employees, customers, productions). / Gerçek kişisel veri paylaşma.
+  - type: textarea
+    id: what
+    attributes:
+      label: "What happened? / Ne oldu?"
+      description: "And what did you expect? / Ne olmasını bekliyordun?"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to reproduce / Nasıl tekrarlanır?"
+      placeholder: "1. ...\n2. ...\n3. ..."
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: "Version or commit / Sürüm ya da commit"
+  - type: input
+    id: env
+    attributes:
+      label: "Environment / Ortam"
+      description: "OS, browser or device; Supabase cloud or self-hosted / İşletim sistemi, tarayıcı ya da cihaz; Supabase bulut mu yerel mi"
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Error messages, screenshots / Hata mesajı, ekran görüntüsü"
+      description: "Remove keys and personal data first. / Önce anahtarları ve kişisel verileri sil."

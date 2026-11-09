@@ -1,0 +1,11 @@
+name: "Question / Soru"
+description: "Setup or usage question. / Kurulum ya da kullanım sorusu."
+labels: ["question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: "Your question / Sorun"
+      description: "Which step are you on, what did you try? / Hangi adımdasın, ne denedin?"
+    validations:
+      required: true
